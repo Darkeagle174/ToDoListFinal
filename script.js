@@ -35,7 +35,7 @@ function updateTaskList() {
             listItem.innerHTML = `
                 <span>${task.text} - ${task.dueDate.toLocaleString()}</span>
                 <button class="delete-button" onclick="deleteTask(${index})">Delete</button>
-                <button onclick="completeTask(${index})">Complete</button>
+                <button class="complete-button" onclick="completeTask(${index})">Complete</button>
             `;
             if (task.dueDate < new Date()) {
                 listItem.className += ' overdue-task';
