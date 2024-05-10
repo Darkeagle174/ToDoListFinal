@@ -12,11 +12,11 @@
     <div class="input-group">
         <input type="text" id="taskInput" placeholder="Add Task">
         <input type="datetime-local" id="dueDateTime">
-        <button onclick="addTask()">Add Task</button>
+        <button class="at" onclick="addTask()">Add Task</button>
     </div>
     <h2>Tasks:</h2>
     <ul id="taskList" class="task-list"></ul>
-    <button onclick="showCompletedTasks()">Show Completed Tasks</button>
+    <button class="ct" onclick="showCompletedTasks()">Show Completed Tasks</button>
     <div id="completedTasks" style="display: none;">
         <h2>Completed Tasks:</h2>
         <ul id="completedTaskList" class="task-list"></ul>
