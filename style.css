@@ -1,9 +1,13 @@
 /* Basic styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     margin: 0;
     padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease;
+    height: 100%;
 }
 
 .container {
@@ -119,6 +123,9 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
+    body {
+        height: 100%;
+    }
     .input-group {
         flex-direction: column; /* Change flex direction to column */
         align-items: center;
