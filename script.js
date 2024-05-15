@@ -28,12 +28,12 @@ function updateTaskList() {
         if (task.completed) {
             listItem.className += ' completed-task';
             listItem.innerHTML = `
-                <span><del>${task.text} - ${task.dueDate.toLocaleString()}</del></span>
+                <span class="text">${task.text} - ${task.dueDate.toLocaleString()}</span>
                 <button class="undo-button" onclick="undoTask(${index})">Undo</button>
             `;
         } else {
             listItem.innerHTML = `
-                <span>${task.text} - ${task.dueDate.toLocaleString()}</span>
+                <span class="text">${task.text} - ${task.dueDate.toLocaleString()}</span>
                 <button class="delete-button" onclick="deleteTask(${index})">Delete</button>
                 <button class="complete-button" onclick="completeTask(${index})">Complete</button>
             `;
@@ -86,7 +86,7 @@ function updateCompletedTaskList() {
         const listItem = document.createElement('li');
         listItem.className = 'task completed-task';
         listItem.innerHTML = `
-            <span><del>${task.text} - ${task.dueDate.toLocaleString()}</del></span>
+            <span class="text">${task.text} - ${task.dueDate.toLocaleString()}</span>
             <button class="undo-button" onclick="undoTask(${tasks.length + index})">Undo</button>
         `;
         completedTaskList.appendChild(listItem);
