@@ -117,7 +117,7 @@ function checkReminders() {
 var images = [
     "https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-sunset-surrounded-by-grass_181624-22807.jpg?t=st=1715750457~exp=1715754057~hmac=6beb924548c0bcfda11a7de5cee6f8da547a1f58b8980b40e9607b51a6c1d2b1&w=996",
     "https://img.freepik.com/free-photo/beautiful-shot-small-lake-with-wooden-rowboat-focus-breathtaking-clouds-sky_181624-2490.jpg?t=st=1715750638~exp=1715754238~hmac=9253c9e0f9231ae0b71ac00ce620fb5d529a2c66af34c5bd330f6fd7b787ae9d&w=996",
-    "https://img.freepik.com/free-photo/cascade-boat-clean-china-natural-rural_1417-1356.jpg?t=st=1715750695~exp=1715754295~hmac=92a6263e48bff633a7da05c4028322bceeaa90c29e3ffe60e983ca40e14755c7&w=996",
+    "https://img.freepik.com/free-photo/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds_181624-21317.jpg?t=st=1715756885~exp=1715760485~hmac=85e7e15f86e8bb75dfb5a459714ec3a7e917e4e6da5fad55368880d3cfe09587&w=996",
     "https://img.freepik.com/free-photo/fog-dark-clouds-mountains_1204-503.jpg?t=st=1715750812~exp=1715754412~hmac=031d2ee33c86c2357641dc959c8dc79fe9dc207ee703a96848d58c5fcfc538e0&w=996",
     "https://img.freepik.com/free-photo/majestic-mountains-with-snow-water-scene-generative-ai_188544-12459.jpg?t=st=1715751105~exp=1715754705~hmac=f0c99d9bd816bc12d04a01b11044e4b4d51f0c3b60fac1283c2f2ff0aa0a233b&w=1060"    
 ];
