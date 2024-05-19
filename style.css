@@ -1,6 +1,8 @@
-/* Basic styling */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Jost';
     background-color: #000000;
     margin: 0;
     padding: 0;
@@ -29,10 +31,12 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
     color: aliceblue;
+    font-family: 'Oswald';
 }
 
 h2 {
     color: aliceblue;
+    font-family: 'Oswald';
 }
 
 .input-group {
@@ -42,6 +46,7 @@ h2 {
     align-items: center;
     /* Center align items vertically */
     margin-bottom: 20px;
+    font-family: 'Jost';
 }
 
 .input-group input[type="text"],
@@ -71,11 +76,13 @@ h2 {
     margin-left: 5px;
     padding: 12px;
     border: none;
+    font-family: 'Jost';
 }
 
 .task-list {
     list-style-type: none;
     padding: 0;
+    font-family: 'Jost';
 }
 
 .task {
@@ -86,17 +93,20 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
+    font-family: 'Jost';
 }
 
 .completed-task {
     background-color: #d4edda;
     color: #155724;
     text-decoration: line-through;
+    font-family: 'Jost';
 }
 
 .overdue-task {
     background-color: #f8d7da;
     color: #721c24;
+    font-family: 'Jost';
 }
 
 .delete-button,
@@ -112,6 +122,7 @@ h2 {
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
+    font-family: 'Jost';
 }
 
 .delete-button:hover,
@@ -133,10 +144,12 @@ h2 {
     right: 80px;
     /* Adjust position to avoid overlapping */
     transform: translateY(-50%);
+    font-family: 'Jost';
 }
 
 .complete-button:hover {
     background-color: #0056b3;
+    font-family: 'Jost';
 }
 
 .ct {
@@ -147,16 +160,19 @@ h2 {
     height: 30px;
     margin-bottom: 15px;
     border: none;
+    font-family: 'Jost';
 }
 
 .text{
     display: block;
     width: 400px;
     word-wrap: break-word;
+    font-family: 'Jost';
 }
 
 #completionPercentage {
     color: aliceblue;
+    font-family: 'Jost';
 }
 
 @media only screen and (max-width: 768px) {
