@@ -96,7 +96,7 @@ function updateCompletedTaskList() {
 function updateCompletionPercentage() {
     const totalTasks = tasks.length + completedTasks.length;
     const completedPercentage = Math.round((completedTasks.length / totalTasks) * 100);
-    document.getElementById('completionPercentage').textContent = `Completion: ${completedPercentage}%`;
+    document.getElementById('completionPercentage').textContent = `COMPLETION: ${completedPercentage}%`;
 }
 
 function checkReminders() {

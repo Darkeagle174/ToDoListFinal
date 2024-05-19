@@ -17,12 +17,12 @@ body {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba( 0, 0, 0, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 15px );
-    -webkit-backdrop-filter: blur( 15px );
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -62,21 +62,43 @@ h2 {
     flex: 1;
     margin-left: 5px;
     border: 1px solid black;
-    
+
 }
 
-.input-group input[type="text"]{
+.input-group input[type="text"] {
     padding: 11px;
 }
 
 .input-group button {
     cursor: pointer;
-    background-color: #0056b3;
     color: white;
     margin-left: 5px;
+    font-weight: bold;
     padding: 12px;
     border: none;
     font-family: 'Jost';
+    background-color: initial;
+    background-image: linear-gradient(#4609d4, #0077ff);
+    border-radius: 8px;
+    border-width: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.input-group button:hover {
+    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+    opacity: .85;
+}
+
+.input-group button:active {
+    outline: 0;
+}
+
+.input-group button:focus {
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
 }
 
 .task-list {
@@ -94,28 +116,35 @@ h2 {
     border-radius: 5px;
     background-color: #f9f9f9;
     font-family: 'Jost';
+    font-weight: bold;
+
 }
 
 .completed-task {
-    background-color: #d4edda;
+    background-color: #90eaa5;
     color: #155724;
     text-decoration: line-through;
     font-family: 'Jost';
+    font-weight: bold;
 }
 
 .overdue-task {
-    background-color: #f8d7da;
-    color: #721c24;
+    background-color: #f08790;
+    color: #42070c;
     font-family: 'Jost';
+    font-weight: bold;
 }
 
-.delete-button,
-.undo-button {
-    background-color: #dc3545;
+.delete-button {
+    background-color: initial;
+    background-image: linear-gradient(#e9830e, #a00404);
     color: white;
+    font-weight: bold;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 5px 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);
+    box-sizing: border-box;
     cursor: pointer;
     position: absolute;
     /* Position absolutely */
@@ -123,20 +152,70 @@ h2 {
     right: 10px;
     transform: translateY(-50%);
     font-family: 'Jost';
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
-.delete-button:hover,
+.delete-button:hover {
+    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+    opacity: .85;
+}
+
+.delete-button:active {
+    outline: 0;
+}
+
+.delete-button:focus {
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+}
+
+.undo-button {
+    background-color: initial;
+    background-image: linear-gradient(#e9830e, #d9ff00);
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    /* Position absolutely */
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-family: 'Jost';
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
 .undo-button:hover {
-    background-color: red;
+    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+    opacity: .85;
+}
+
+.undo-button:active {
+    outline: 0;
+}
+
+.undo-button:focus {
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
 }
 
 .complete-button {
-    background-color: green;
+    background-color: initial;
+    background-image: linear-gradient(#dcf30e, #177200);
     /* Set complete button color to green */
-    color: white;
+    color: #000000;
+    font-weight: bold;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 5px 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);
+    box-sizing: border-box;
     cursor: pointer;
     position: absolute;
     /* Position absolutely */
@@ -145,25 +224,56 @@ h2 {
     /* Adjust position to avoid overlapping */
     transform: translateY(-50%);
     font-family: 'Jost';
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 .complete-button:hover {
-    background-color: #0056b3;
-    font-family: 'Jost';
+    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+    opacity: .85;
+}
+
+.complete-button:active {
+    outline: 0;
+}
+
+.complete-button:focus {
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
 }
 
 .ct {
-    background-color: #0056b3;
+    background-color: initial;
+    background-image: linear-gradient(#e427a5, #35007e);
     color: white;
-    border-radius: 5px;
+    font-weight: bold;
+    border-radius: 8px;
     width: 100%;
-    height: 30px;
+    height: 40px;
     margin-bottom: 15px;
     border: none;
     font-family: 'Jost';
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
-.text{
+.ct:hover {
+    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+    opacity: .85;
+}
+
+.ct:active {
+    outline: 0;
+}
+
+.ct:focus {
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+}
+
+.text {
     display: block;
     width: 400px;
     word-wrap: break-word;
@@ -173,13 +283,16 @@ h2 {
 #completionPercentage {
     color: aliceblue;
     font-family: 'Jost';
+    font-weight: bold;
+    font-size: larger;
 }
 
 @media only screen and (max-width: 768px) {
     body {
         height: 100%;
         min-height: 100vh;
-        background-size: fill; /* Use 'contain' to fit the image within the body */
+        background-size: fill;
+        /* Use 'contain' to fit the image within the body */
         background-position: center;
         background-color: #000000;
     }
@@ -201,9 +314,8 @@ h2 {
     }
 
 
-    .delete-button,
-    .undo-button {
-        right: -26px;
+    .delete-button {
+        right: -24px;
         /* Reset right positioning */
         /* left: 50%; Move buttons to the left */
         transform: translateX(-50%) translateY(-50%);
@@ -211,15 +323,20 @@ h2 {
 
     }
 
+    .undo-button {
+        right: -15px;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
     .complete-button {
         right: 65px;
     }
 
     .task {
-        font-size: 12px; 
+        font-size: 12px;
     }
 
-    .text{
+    .text {
         width: 160px;
     }
 }
