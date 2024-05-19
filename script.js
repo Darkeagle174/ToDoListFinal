@@ -114,7 +114,7 @@ function checkReminders() {
 }
 
 
-var images = [
+const desktopImages = [
     "https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -124,21 +124,33 @@ var images = [
     "https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/20141645/pexels-photo-20141645/free-photo-of-rain-cloud-on-sky-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/957002/berchtesgaden-alpine-watzmann-berchtesgaden-national-park-957002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/545521/pexels-photo-545521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"    
+    "https://images.pexels.com/photos/545521/pexels-photo-545521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+];
+
+const mobileImages = [
+    "https://images.pexels.com/photos/886051/pexels-photo-886051.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/33696/night-star-moon-big-bar.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/775200/pexels-photo-775200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/4388593/pexels-photo-4388593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/4666754/pexels-photo-4666754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 ];
 
 // Function to set a random background image
 function setRandomBackground() {
-        // Get a random index from the images array
-        var randomIndex = Math.floor(Math.random() * images.length);
-        
-        // Set the background image of the body
-        document.body.style.backgroundImage = "url('" + images[randomIndex] + "')";
-        
-    }
+    const isMobile = window.innerWidth <= 600;
+    const images = isMobile ? mobileImages : desktopImages;
+    const randomIndex = Math.floor(Math.random() * images.length);
+    const backgroundImage = "url('" + images[randomIndex] + "')";
+    const bodyElement = document.body;
+    const hiddenPreloader = document.querySelector('.hidden-preloader');
+    
+    // Smooth transition between background images
+    bodyElement.style.transition = 'background-image 1s ease';
+    bodyElement.style.backgroundImage = backgroundImage;
+}
 
-    // Call the function initially to set the background
-    setRandomBackground();
+// Call the function initially to set the background
+setRandomBackground();
 
-    // Change the background image every 15 minutes (in milliseconds)
-    setInterval(setRandomBackground, 1 * 60 * 1000);
+// Change the background image every 15 minutes (in milliseconds)
+setInterval(setRandomBackground, 0.15 * 60 * 1000);

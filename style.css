@@ -1,12 +1,13 @@
 /* Basic styling */
 body {
     font-family: Arial, sans-serif;
-    /* background-color: #f0f0f0; */
+    background-color: #000000;
     margin: 0;
     padding: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: background-image 0.5s ease;
+    transition: opacity 0.5s ease;
+    opacity: 1;
     height: 100%;
 }
 
@@ -162,6 +163,9 @@ h2 {
     body {
         height: 100%;
         min-height: 100vh;
+        background-size: fill; /* Use 'contain' to fit the image within the body */
+        background-position: center;
+        background-color: #000000;
     }
 
     .input-group {
