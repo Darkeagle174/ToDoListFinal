@@ -138,7 +138,7 @@ const mobileImages = [
     "https://images.pexels.com/photos/4666754/pexels-photo-4666754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/2877375/pexels-photo-2877375.jpeg?auto=compress&cs=tinysrgb&w=600",
     "https://images.pexels.com/photos/2422914/pexels-photo-2422914.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/3965506/pexels-photo-3965506.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/20201053/pexels-photo-20201053/free-photo-of-road-in-dark-forest.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/4394196/pexels-photo-4394196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/1252871/pexels-photo-1252871.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/1453784/pexels-photo-1453784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
