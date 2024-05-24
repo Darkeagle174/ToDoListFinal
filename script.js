@@ -152,7 +152,7 @@ function setRandomBackground() {
     const backgroundImage = "url('" + images[randomIndex] + "')";
     const bodyElement = document.body;
     const hiddenPreloader = document.querySelector('.hidden-preloader');
-    
+
     // Smooth transition between background images
     bodyElement.style.transition = 'background-image 0.5s ease';
     bodyElement.style.backgroundImage = backgroundImage;

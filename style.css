@@ -298,7 +298,7 @@ h2 {
 .progress-bar {
     height: 100%;
     width: 0;
-    background: linear-gradient(45deg, #000000, #4d06b1, #022e60, #0095ff, #03d835, #eaff00, #ffc400, #ff0015, #ff00c8 );
+    background: linear-gradient(45deg, #000000, #4d06b1, #022e60, #0095ff, #03d835, #eaff00, #ffc400, #ff0015, #ff00c8);
     border-radius: 25px;
     transition: width 0.5s ease-in-out;
 }
